@@ -2,34 +2,36 @@
 
 
 
-# [Project Name] 🎯
+# PRAVACHANAM 2.0
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: CODENOVA
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
+- Team Lead: Mithra B- Jawaharlal college of engineering and technology
+- Member 2: Vismaya K V - Jawaharlal college of engineering and technology
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+Pravachanam 2.0 is funny and completely useless future prediction website.users select simple details or everyday problems,and the website gives hilarious and unnecessary predictions about their future.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+
+People have many unnecessary problems in their daily lives, such as hair fall, loose dresses, hunger, boredom, and other tiny issues. Unfortunately, nobody is predicting their completely useless future consequences.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+
+Pravachanam 2.0 takes a user's problem and magically predicts a completely unrelated and funny future event. The prediction is designed to be useless, unexpected, and entertaining.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- html,css,javascript,python,github,git
+- none
+- none
+- Antigravity,vs code,Github
 
 For Hardware:
 - [List main components]
@@ -39,27 +41,28 @@ For Hardware:
 ### Implementation
 For Software:
 # Installation
-[commands]
+npm install
 
 # Run
-[commands]
+npm run dev
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![alt text](<WhatsApp Image 2026-09-12 at 6.17.54 AM.jpeg>)
+The home screen of Pravachanam 2.0, introducing its fictional and humorously dramatic future-prediction system
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![alt text](<WhatsApp Image 2026-09-12 at 6.30.06 AM.jpeg>)
+Step 2 of Pravachanam 2.0, where users enter their details, choose their mood, and select a simple everyday problem for the system to predict their “future.”
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![alt text](<WhatsApp Image 2026-09-12 at 6.31.28 AM.jpeg>)
+The final prediction screen displays the generated humorous future prediction, with options to generate another prediction or return to the home page.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+# Diagrams 
+Workflow: Designed the UI → created user input and problem-selection forms → implemented prediction logic using JavaScript → styled the application with CSS → tested and refined the website locally using Antigravity.
+
+The project was developed using Antigravity by first creating the basic website structure and UI, followed by designing the home page, user-input form, problem-selection interface, and prediction-result page. The functionality was then implemented using JavaScript to collect user inputs and generate random humorous future predictions. CSS was used to create the dark, futuristic visual design with animations and responsive layouts. Finally, the application was tested locally and refined based on the output.
 
 For Hardware:
 
@@ -98,6 +101,3 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
-
-
-

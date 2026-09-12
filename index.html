@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔮 PRAVACHANAM 2.0</title>
+  <meta name="description" content="Pravachanam 2.0 — a fictional, funny future prediction system.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow glow-gold"></div>
+  <div class="ambient-glow glow-purple"></div>
+  <div class="stars-overlay"></div>
 
+  <main class="page-container">
+    <section id="page-intro" class="page-view active">
+      <header class="app-header">
+        <div class="enlightenment-badge">
+          <span class="badge-icon">🔮</span>
+          <span>Pravachanam 2.0</span>
+        </div>
+        <h1 class="main-title">🔮 PRAVACHANAM 2.0</h1>
+        <p class="main-subtitle">THE UNIVERSE HAS A VERY QUESTIONABLE PLAN FOR YOU.</p>
+
+        <div class="intro-card card">
+          <p class="intro-text">"Welcome to Pravachanam 2.0 — the world's most unnecessarily dramatic future prediction system."</p>
+          <p class="intro-subtext">"Give us a simple problem. We will give you a questionable future."</p>
+          <div class="disclaimer-badge">
+            <span class="disclaimer-icon">⚖️</span>
+            <span>100% fictional. 0% scientifically accurate.</span>
+          </div>
+
+          <div class="action-row">
+            <button id="start-journey-btn" class="primary-btn" type="button" aria-label="Reveal My Future">
+              <span class="btn-sparkle">🔮</span>
+              <span class="btn-text">REVEAL MY FUTURE</span>
+              <span class="btn-shine"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section id="page-input" class="page-view hidden">
+      <header class="app-header">
+        <div class="enlightenment-badge">
+          <span class="badge-icon">✍️</span>
+          <span>Step 2 of 3</span>
+        </div>
+        <h2 class="section-heading">TELL THE UNIVERSE</h2>
+      </header>
+
+      <div class="card form-card">
+        <form id="prediction-form" novalidate>
+          <div class="form-group">
+            <label for="user-name" class="form-label">
+              <span class="label-icon">👤</span>
+              <span>1. Name</span>
+            </label>
+            <input id="user-name" class="form-input" type="text" placeholder="Enter your name" maxlength="40" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-age" class="form-label">
+              <span class="label-icon">⏳</span>
+              <span>2. Age</span>
+            </label>
+            <input id="user-age" class="form-input" type="number" min="1" max="130" placeholder="Enter your age" required>
+          </div>
+
+          <div class="form-group">
+            <label for="user-mood" class="form-label">
+              <span class="label-icon">🎭</span>
+              <span>3. Mood</span>
+            </label>
+            <div class="select-wrapper">
+              <select id="user-mood" class="form-select" required>
+                <option value="" disabled selected>Select your mood</option>
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Angry">Angry</option>
+                <option value="Sleepy">Sleepy</option>
+                <option value="Hungry">Hungry</option>
+                <option value="Confused">Confused</option>
+                <option value="Excited">Excited</option>
+                <option value="Bored">Bored</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span class="label-icon">💬</span>
+              <span>4. SELECT YOUR PROBLEM</span>
+            </label>
+
+            <div class="problem-options-grid" id="problem-options-grid" aria-label="Fixed list of 50 tiny problems">
+              <button type="button" class="problem-option" data-problem="I'm hungry.">I'm hungry.</button>
+              <button type="button" class="problem-option" data-problem="I have an exam tomorrow.">I have an exam tomorrow.</button>
+              <button type="button" class="problem-option" data-problem="My phone is at 5%.">My phone is at 5%.</button>
+              <button type="button" class="problem-option" data-problem="I lost my charger.">I lost my charger.</button>
+              <button type="button" class="problem-option" data-problem="I'm bored.">I'm bored.</button>
+              <button type="button" class="problem-option" data-problem="I need money.">I need money.</button>
+              <button type="button" class="problem-option" data-problem="I can't sleep.">I can't sleep.</button>
+              <button type="button" class="problem-option" data-problem="I keep procrastinating.">I keep procrastinating.</button>
+              <button type="button" class="problem-option" data-problem="My friend isn't replying.">My friend isn't replying.</button>
+              <button type="button" class="problem-option" data-problem="I don't want to study.">I don't want to study.</button>
+              <button type="button" class="problem-option" data-problem="I'm getting late.">I'm getting late.</button>
+              <button type="button" class="problem-option" data-problem="I have too much homework.">I have too much homework.</button>
+              <button type="button" class="problem-option" data-problem="My internet is slow.">My internet is slow.</button>
+              <button type="button" class="problem-option" data-problem="I ordered food.">I ordered food.</button>
+              <button type="button" class="problem-option" data-problem="I have no motivation.">I have no motivation.</button>
+              <button type="button" class="problem-option" data-problem="I spent all my money.">I spent all my money.</button>
+              <button type="button" class="problem-option" data-problem="I have nothing to wear.">I have nothing to wear.</button>
+              <button type="button" class="problem-option" data-problem="I have a fever.">I have a fever.</button>
+              <button type="button" class="problem-option" data-problem="I lost my pen.">I lost my pen.</button>
+              <button type="button" class="problem-option" data-problem="I’m wearing black today.">I’m wearing black today.</button>
+              <button type="button" class="problem-option" data-problem="My phone is at 10%.">My phone is at 10%.</button>
+              <button type="button" class="problem-option" data-problem="I saw 11:11.">I saw 11:11.</button>
+              <button type="button" class="problem-option" data-problem="I bought a new pen.">I bought a new pen.</button>
+              <button type="button" class="problem-option" data-problem="I’m wearing new clothes.">I’m wearing new clothes.</button>
+              <button type="button" class="problem-option" data-problem="I cleaned my bag.">I cleaned my bag.</button>
+              <button type="button" class="problem-option" data-problem="I have a new notebook.">I have a new notebook.</button>
+              <button type="button" class="problem-option" data-problem="I changed my wallpaper.">I changed my wallpaper.</button>
+              <button type="button" class="problem-option" data-problem="I’m going outside tomorrow.">I’m going outside tomorrow.</button>
+              <button type="button" class="problem-option" data-problem="I bought a plant.">I bought a plant.</button>
+              <button type="button" class="problem-option" data-problem="I found an old photo.">I found an old photo.</button>
+              <button type="button" class="problem-option" data-problem="My battery is full.">My battery is full.</button>
+              <button type="button" class="problem-option" data-problem="I heard a strange noise.">I heard a strange noise.</button>
+              <button type="button" class="problem-option" data-problem="I got a new hairstyle.">I got a new hairstyle.</button>
+              <button type="button" class="problem-option" data-problem="I saw a rainbow.">I saw a rainbow.</button>
+              <button type="button" class="problem-option" data-problem="I forgot my password.">I forgot my password.</button>
+              <button type="button" class="problem-option" data-problem="I bought a water bottle.">I bought a water bottle.</button>
+              <button type="button" class="problem-option" data-problem="I found ₹10.">I found ₹10.</button>
+              <button type="button" class="problem-option" data-problem="I heard my name somewhere.">I heard my name somewhere.</button>
+              <button type="button" class="problem-option" data-problem="I wore matching clothes today.">I wore matching clothes today.</button>
+              <button type="button" class="problem-option" data-problem="I opened an old chat.">I opened an old chat.</button>
+              <button type="button" class="problem-option" data-problem="I got a random notification.">I got a random notification.</button>
+              <button type="button" class="problem-option" data-problem="I saw a butterfly.">I saw a butterfly.</button>
+              <button type="button" class="problem-option" data-problem="I bought something online.">I bought something online.</button>
+              <button type="button" class="problem-option" data-problem="I heard someone laughing.">I heard someone laughing.</button>
+              <button type="button" class="problem-option" data-problem="I made a new playlist.">I made a new playlist.</button>
+              <button type="button" class="problem-option" data-problem="I changed my profile picture.">I changed my profile picture.</button>
+              <button type="button" class="problem-option" data-problem="I saw a shooting star.">I saw a shooting star.</button>
+              <button type="button" class="problem-option" data-problem="My hair is falling.">My hair is falling.</button>
+              <button type="button" class="problem-option" data-problem="My phone is getting slow.">My phone is getting slow.</button>
+              <button type="button" class="problem-option" data-problem="I keep losing my keys.">I keep losing my keys.</button>
+            </div>
+          </div>
+
+          <div id="form-validation-msg" class="validation-message" role="alert" aria-live="polite">
+            <span class="alert-icon">⚠️</span>
+            <span id="form-validation-text">Please complete all four fields.</span>
+          </div>
+
+          <div class="action-row">
+            <button id="predict-btn" class="primary-btn" type="button" aria-label="Predict My Future">
+              <span class="btn-sparkle">🔮</span>
+              <span class="btn-text">PREDICT MY FUTURE</span>
+              <span class="btn-shine"></span>
+            </button>
+            <button id="back-to-intro-btn" class="clear-btn" type="button" aria-label="Back to Home">
+              <span>🏠</span>
+              <span>Back to Home</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div id="calculation-state" class="meditation-loader hidden" aria-hidden="true">
+      <div class="lotus-spinner">🔮</div>
+      <p class="loader-text" id="calculation-status">Consulting the cosmic department...</p>
+    </div>
+
+    <section id="page-result" class="page-view hidden" aria-live="polite">
+      <div class="result-card card">
+        <h2 class="result-main-heading">🔮 PRAVACHANAM COMPLETE</h2>
+        <p id="final-prediction" class="final-prediction">Loading cosmic chaos...</p>
+
+        <div class="action-row result-actions">
+          <button id="predict-again-btn" class="primary-btn" type="button">
+            <span>🔄</span>
+            <span>PREDICT AGAIN</span>
+          </button>
+          <button id="return-home-btn" class="clear-btn" type="button">
+            <span>🏠</span>
+            <span>BACK TO HOME</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
